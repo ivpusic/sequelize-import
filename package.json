@@ -1,5 +1,5 @@
 {
-  "name": "sequalize-import",
+  "name": "sequelize-import",
   "version": "1.0.0",
   "description": "Importing sequelize modules with ease",
   "main": "index.js",
@@ -19,9 +19,6 @@
   ],
   "author": "Ivan Pusic",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ivpusic/node-module-seed/issues"
-  },
   "homepage": "https://github.com/ivpusic/sequelize-import",
   "devDependencies": {
     "should": "~3.1.3",
