@@ -19,12 +19,6 @@ Let we say we have following directory structure:
 └── User.js
 ```
 
-If you want to include all defined models inside ``/path/to/models`` directory you can use following:
-
-```
-var models = require('sequelize-import')('/path/to/models', sequelize_connection);
-```
-
 Model definitions inside ``*.js`` files can be something like this:
 ```
 module.exports = function (sequelize, DataTypes) {
@@ -35,12 +29,21 @@ module.exports = function (sequelize, DataTypes) {
 };
 ```
 
+To include all defined models inside ``/path/to/models`` directory and its subdirectories you can use following:
+
+```
+var models = require('sequelize-import')('/path/to/models', sequelize_connection);
+```
+
 Now you can access to ``Contact`` and ``User`` models in this way:
 ```
 models.User
 models.Contacts.Contact
 ```
 
-Note that ``sequelize-import`` will recursively search for ``*.js`` files inside provided directory.
+Note that ``sequelize-import`` will recursively search for ``js`` files inside specified directory.
 
-With this you can separate models definitions into multiple files, and then load it into some central place, then define relations between models, etc..
+With this you can separate models definitions into multiple files, and then load it into some central place, then define relations between models, etc.
+
+### Questions
+You can send me mail to pusic007@gmail.com if you have any questions.
