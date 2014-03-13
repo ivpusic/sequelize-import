@@ -1,4 +1,4 @@
 sequelize-import
 ================
 
-Lib for importing sequelize models with ease
+Importing ``sequelize`` modules with ease.

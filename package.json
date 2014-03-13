@@ -1,0 +1,30 @@
+{
+  "name": "sequalize-import",
+  "version": "0.0.0",
+  "description": "Importing sequalize modules with ease",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivpusic/node-module-seed.git"
+  },
+  "keywords": [
+    "sequalize",
+    "import"
+  ],
+  "author": "Ivan Pusic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivpusic/node-module-seed/issues"
+  },
+  "homepage": "https://github.com/ivpusic/node-module-seed",
+  "devDependencies": {
+    "should": "~3.1.3",
+    "sequelize": "~1.7.0"
+  }
+}
