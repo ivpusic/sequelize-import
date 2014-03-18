@@ -32,7 +32,9 @@ module.exports = function (sequelize, DataTypes) {
 To include all defined models inside ``/path/to/models`` directory and its subdirectories you can use following:
 
 ```
-var models = require('sequelize-import')('/path/to/models', sequelize_connection, { exclude: ['index.js'] });
+var models = require('sequelize-import')('/path/to/models', sequelize_connection, { 
+	exclude: ['index.js'] 
+});
 ```
 
 Now you can access to ``Contact`` and ``User`` models in this way:
