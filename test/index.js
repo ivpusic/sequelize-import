@@ -16,7 +16,7 @@ describe('Connection', function () {
   describe('importing models', function () {
     it('should import models', function () {
       models = sequelizeImport(path.join(__dirname, 'models'), sequelize);
-      Object.keys(models).length.should.be.exactly(2);
+      Object.keys(models).length.should.be.exactly(3);
     });
 
     it('should have User property', function () {
@@ -29,6 +29,11 @@ describe('Connection', function () {
 
     it('should have contact property', function () {
       models.Contacts.should.have.property('Contact');
+    });
+
+    it('uses the model name supplied by sequelize', function(){
+      models.should.have.property('Post')
+      models.should.not.have.property('post');
     });
   });
 });
