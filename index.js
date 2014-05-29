@@ -43,7 +43,8 @@ function load(PATH, sequelize, opts) {
       models[file] = load(path.join(PATH, file), sequelize, opts);
     } else {
       file = file.split('.')[0];
-      models[file] = sequelize.import(path.join(PATH, file));
+      var model = sequelize.import(path.join(PATH, file))
+      models[model.name] = model;
     }
   });
   return models;

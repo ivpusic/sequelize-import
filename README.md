@@ -43,6 +43,8 @@ models.User
 models.Contacts.Contact
 ```
 
+Note: The model name is how it will be exposed, e.g: ```javascript var User = sequelize.define('User', {}, {}); ``` will be exposed as ```javascript models.User```.
+
 Note that ``sequelize-import`` will recursively search for ``js`` files inside specified directory.
 
 With this you can separate models definitions into multiple files, and then load it into some central place, then define relations between models, etc.
