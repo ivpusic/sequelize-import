@@ -1,6 +1,6 @@
 {
   "name": "sequelize-import",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Importing sequelize modules with ease",
   "main": "index.js",
   "directories": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ivpusic/sequelize-import",
   "devDependencies": {
     "should": "~3.1.3",
-    "sequelize": "~1.7.0"
+    "sequelize": "~1.7.0",
+    "mocha": "~1.20.0"
   }
 }
